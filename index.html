@@ -6,100 +6,291 @@
     <meta name="description" content="Webデザイナー きらめき太郎のポートフォリオサイトです。東京を中心に活動しています。">
     <meta name="keywords" content="Web, デザイン, デザイナー, ポートフォリオ, Web制作">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
   </head>
-  <body><!--header-->
-    <header><a href="#contact" class="button-contact"><i aria-label="お問い合わせ" class="fas fa-envelope-open"></i></a>
+  <body>
+    <!--header-->
+    <header id="top">
+      <!-- Navigation -->
+      <nav class='cf'>
+  <ul class='cf'>
+    <li>
+      <a href='#top'>Top</a>
+    </li>
+    <li>
+      <a href='#skills'>Skills</a>
+    </li>
+    <li>
+      <a href='#web'>Web</a>
+    </li>
+    <li>
+      <a href='#print'>Print</a>
+    </li>
+    <li>
+      <a href='#illust'>Illustration</a>
+    </li>
+    <li>
+      <a href='#contact'>Contact</a>
+    </li>
+  </ul>
+  <a href='#' id='openup'>MENU</a>
+</nav>
+<!-- Nav End -->
+<section class="parallax">
       <div class="profile">
-        <h1 class="site-title abel uppercase text-center">Web & Print Designer <span>Lavita Starr</span></h1><img src="./images/profile.jpg" alt="プロフィール写真" width="92" height="92" class="block-center profile-icon">
+        <h1 class="site-title abel uppercase text-left">Web & Print Designer <span>Lavita Starr</span></h1>
         <p>アメリカ出身、現在千葉県在住のデザイナー、ラビタ　スターです。日本は5年目ですが日本語を流暢に話せます。オンラインスクールでWeb制作について学んでいます。Webデザイナーへと転職活動中です。これからさらにWeb制作の技術や知識を身につけて、Webサイト運用や問題解決のアドバイスもできるデザイナーになりたいと思っています。</p>
       </div>
-    </header><!--contents-->
+      </section>
+    </header>
+    <!--contents-->
     <main><!--skills-->
       <section id="skills">
         <h2 class="text-center">My Skills</h2>
         <div class="container">
-          <div class="skill-box"><i aria-hidden="true" class="fas fa-desktop"></i>
-            <h3 class="text-center">Web</h3>
-            <p>HTML/CSSでのコーディングができます。JavaScriptも現在勉強中です。</p>
-          </div>
-          <div class="skill-box"><i aria-hidden="true" class="fas fa-pencil-alt"></i>
-            <h3 class="text-center">Illust</h3>
-            <p>アメリカのカリフォルニア州の美術大学「The Art Institute」で2Dアニメーションやキャラクターデザインなどを勉強しましたので、イラスト制作が得意です。</p>
-          </div>
-          <div class="skill-box"><i aria-hidden="true" class="far fa-newspaper"></i>
-            <h3 class="text-center">Print</h3>
-            <p>Adobe InDesignを使って新聞や雑誌など色々なプリントデザイン制作ができます。</p>
-          </div>
+<div class="chartBarsWrap">
+    <div class="chartBars chartBars1">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>80%</span></li>
+            <li><span>60%</span></li>
+            <li><span>40%</span></li>
+            <li><span>20%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Webデザインやコーディングスキル</span>
+                <div data-percentage="57" class="bar greenBar trigger"></div>
+                </span>
+                <b>Web</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">グラフィックデザインスキル</span>
+                <div data-percentage="85" class="bar blueBar trigger"></div>
+                </span>
+                <b>Print</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">イラストスキル</span>
+                <div data-percentage="73" class="bar orangeBar trigger"></div>
+                </span>
+                <b>Illust</b>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="chartBarsWrap">
+    <div class="chartBars chartBars1">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>80%</span></li>
+            <li><span>60%</span></li>
+            <li><span>40%</span></li>
+            <li><span>20%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Webコーディング</span>
+                <div data-percentage="90" class="bar orangeBar trigger"></div>
+                </span>
+                <b>HTML/CSS</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">勉強中</span>
+                <div data-percentage="45" class="bar purpleBar trigger"></div>
+                </span>
+                <b>jQuery</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">勉強中</span>
+                <div data-percentage="35" class="bar greenBar trigger"></div>
+                </span>
+                <b>Bootstrap</b>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="chartBarsWrap">
+    <div class="chartBars chartBars1">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>80%</span></li>
+            <li><span>60%</span></li>
+            <li><span>40%</span></li>
+            <li><span>20%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Adobe Photoshop</span>
+                <div data-percentage="85" class="bar greenBar trigger"></div>
+                </span>
+                <b>PhotoShop</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Adobe Illustrator</span>
+                <div data-percentage="80" class="bar blueBar trigger"></div>
+                </span>
+                <b>Illustrator</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Adobe InDesign</span>
+                <div data-percentage="70" class="bar purpleBar trigger"></div>
+                </span>
+                <b>InDesign</b>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
         </div>
       </section><!--works-->
-     <section id="works">
-        <h2 class="text-center">Works</h2>
-        <div class="works-box"><a href="#"><img src="./images/img_work_site.png" alt="株式会社きらめき コーポレートサイト様 Webサイトデザイン">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>株式会社きらめき コーポレートサイト</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_card.jpg" alt="きらめき太郎様 名刺デザイン">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>きらめき太郎様 名刺</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_blog.jpg" alt="WordPressオリジナルテーマ">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>ブログデザイン</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_card.jpg" alt="きらめき太郎様 名刺デザイン">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>きらめき太郎様 名刺</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_blog.jpg" alt="WordPressオリジナルテーマ">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>ブログデザイン</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_site.png" alt="株式会社きらめき コーポレートサイト様 Webサイトデザイン">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>株式会社きらめき コーポレートサイト</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-             <div class="works-box"><a href="#"><img src="./images/img_work_card.jpg" alt="きらめき太郎様 名刺デザイン">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>きらめき太郎様 名刺</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_blog.jpg" alt="WordPressオリジナルテーマ">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>ブログデザイン</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-        <div class="works-box"><a href="#"><img src="./images/img_work_site.png" alt="株式会社きらめき コーポレートサイト様 Webサイトデザイン">
-            <div class="works-box-inner">
-              <div class="text-center">
-                <h3>株式会社きらめき コーポレートサイト</h3><small>2016.04.20</small><span class="button-readmore">Read More</span>
-              </div>
-            </div></a></div>
-      </section><!--contact-->
+     <section id="web">
+        <h2 class="text-center">Web</h2>
+        <div class="container">
+          <h3>テンプレートデザイン</h3> 
+<div class="gallery wow fadeIn">
+  <div class="gallery-item">
+    <a href="http://starrlightmyst.sakura.ne.jp/shopping-site/top.html" target="_blank"><img class="gallery-image" src="images/shopping-site.png" alt="Shopping site template design"></a>
+  </div>
+
+  <div class="gallery-item">
+    <a href="http://starrlightmyst.sakura.ne.jp/corporate-site/index.html" target="_blank"><img class="gallery-image" src="images/corporate-site.png" alt="corporate site template design"></a>
+  </div>
+
+  <div class="gallery-item">
+    <a href="http://starrlightmyst.sakura.ne.jp/index.html" target="
+    "><img class="gallery-image" src="images/popsicle-site.png" alt="website design"></a>
+  </div>
+  </div>
+
+</div>
+    </section>
+    <section id="print" class="dark-bg">
+
+          <div class="container">
+            <h2 class="text-center">Print & Graphic Design</h2>
+	          <div class="gallery">
+
+		<div class="gallery-item">
+		<a data-fancybox="gallery" href="images/californiaclub.jpg">	<img class="gallery-image" src="images/californiaclub.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/jackhammer.jpg"><img class="gallery-image" src="images/jackhammer.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/sushitshirt.png"><img class="gallery-image" src="images/sushitshirt.png" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+		<a data-fancybox="gallery" href="images/luckyu.jpg"><img class="gallery-image" src="images/luckyu.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/magcover.jpg"><img class="gallery-image" src="images/magcover.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/soap.jpg"><img class="gallery-image" src="images/soap.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/eyesbill.jpg"><img class="gallery-image" src="images/eyesbill.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/javavalley.jpg"><img class="gallery-image" src="images/javavalley.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/doll.jpg"><img class="gallery-image" src="images/doll.jpg" alt=""></a>
+		</div>
+
+	</div>
+          </div>
+</section>
+<section>
+          <div  class="container">
+            <h2 id="illust" class="text-center">Illustration</h2>
+	          <div class="gallery">
+
+		<div class="gallery-item">
+		<a data-fancybox="gallery" href="images/coffee1.jpg">	<img class="gallery-image" src="images/coffee1.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/coffee2.jpg"><img class="gallery-image" src="images/coffee2.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/coffee3.jpg"><img class="gallery-image" src="images/coffee3.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/dollill.jpg"><img class="gallery-image" src="images/dollill.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/elephant.jpg"><img class="gallery-image" src="images/elephant.jpg" alt=""></a>
+		</div>
+
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/facialstudy.jpg"><img class="gallery-image" src="images/facialstudy.jpg" alt=""></a>
+		</div>
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/figure2.jpg"><img class="gallery-image" src="images/figure2.jpg" alt=""></a>
+		</div>
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/man.jpg"><img class="gallery-image" src="images/man.jpg" alt=""></a>
+		</div>
+		<div class="gallery-item">
+			<a data-fancybox="gallery" href="images/witch.jpg"><img class="gallery-image" src="images/witch.jpg" alt=""></a>
+		</div>
+
+	</div>
+          </div>
+          </section>
+
+      <!--contact-->
         <section id="contact">
         <h2 class="text-center">Contact Me</h2>
         <ul>
           <li><a href="mailto:lavitastarr@gmail.com"><i aria-label="メール" class="fas fa-envelope-open"></i></a></li>
           <li class="github"><a href="https://github.com/Starrlightmyst"><i aria-label="GitHub" class="fab fa-github-square"></i></a></li>
-          <li class="line"><a href="http://line.me/ti/p/@starr1986"><i aria-label="Line" class="fab fa-line"></i></a></li>
+
         </ul>
       </section>
     </main><!--footer-->
-    <footer><small class="text-center abel uppercase">&copy; Lavita Starr, All Rights Reserved.</small></footer>
+    <footer><small class="text-center abel uppercase">&copy; Lavita Starr</small></footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
   </body>
 </html>
