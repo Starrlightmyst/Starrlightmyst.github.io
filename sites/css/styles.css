@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Meera+Inimai|Pacifico');
+
+/* CSS Variables */
+:root {
+  --primary-color: #FF8710;
+  --primary-color-hover: #3C1E00;
+  --secondary-color: #FF2E8D;
+  --secondary-color-hover: #FF7AB7;
+  --light-color: #fff;
+}
+
+body {
+  font-family: 'Meera Inimai', sans-serif;
+  background-color: var(--light-color);
+  box-sizing: border-box;
+  color:#333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.boxes {
+  display:flex;
+  width: 100%;
+}
+.box {
+  width:45%;
+  background: var(--light-color);
+  color: #333;
+  padding: .8rem;
+  text-align: left;
+  margin:1%;
+  border-radius: 30px;
+}
+
+.inside-box{
+  border-style: dotted;
+  border-color: var(--primary-color-hover);
+  border-image-source: url("../img/dots.svg");
+  border-image-slice: 30% 30%;
+  border-image-repeat: round;
+  border-width: 16px;
+  border-radius: 30px;
+  padding:1rem;
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.box-img{
+  width: 40%;
+  float:left;
+  padding-top: 1rem;
+}
+.box-img img{
+  width: 100%;
+  max-width: 173px;
+
+}
+
+.box-content{
+  width: 60%;
+  float:right;
+
+}
+.box-content a{
+  text-align: center;
+}
+
+.box-content p {
+  font-size: .8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Section */
+
+.section {
+  padding: 2rem 0;
+}
+
+.section-border {
+  background: url("../img/section-border.svg") repeat-x;
+  background-color: var(--light-color);
+  height:15px;
+  width:100%;
+}
+
+.section-border-footer {
+  background: url("../img/section-border2.svg") repeat-x;
+  background-color: var(--light-color);
+  height:15px;
+  width:100%;
+}
+
+.transparent {
+  background: url("../img/section-border.svg") repeat-x;
+}
+
+.section-head {
+  font-size: 2rem;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: .1rem;
+  margin:0;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  font-family: Pacifico, cursive;
+  color: var(--secondary-color);
+}
+
+.top-section-header {
+  color:var(--secondary-color);
+  font-family: Pacifico, cursive;
+}
+
+.top-section-left {
+  color: #333;
+  text-align: left;
+  width: 48%;
+float:left;
+margin: 11rem auto;
+}
+
+.top-section-right {
+  color: #333;
+  text-align: center;
+  float:right;
+  width: 48%;
+  margin: 9rem auto;
+}
+.top-section-right i{
+  font-size: 2.5rem;
+  color: var(--primary-color-hover)
+}
+
+.top-section-right h2{
+  font-family: Pacifico, cursive;
+  color: var(--primary-color-hover);
+}
+
+.top-section-right h4 {
+  color: var(--secondary-color);
+  margin: .1rem auto;
+}
+
+.section-main {
+  height: auto;
+}
+
+.icon-box {
+  width: 180px;
+  margin:1rem;
+}
+
+.icon-box p {
+  font-size: .8rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.how-to-use {
+  text-align: left;
+}
+
+.how-to-use h2{
+  color: var(--secondary-color);
+}
+.how-to-use p{
+  margin-bottom: 6rem;
+  width:80%
+}
+.how-to-use a,
+.top-section-left a{
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.how-to-use a:hover,
+.top-section-left a:hover{
+  color: var(--secondary-color-hover);
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  margin: 0;
+  padding:0;
+  background: url('../img/showcase-bg.png') no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#showcase .container {
+  margin-top: 30vh;
+}
+#free-showcase {
+  margin: 0;
+  padding:0;
+  background: var(--light-color);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#free-showcase .container {
+  margin-top: 30vh;
+}
+
+#showcase h1 {
+  font-size: 2rem;
+  width:80%;
+  margin-bottom: 0;
+  font-family: "Fredoka One",cursive;
+  text-shadow:
+     2px  2px     #fff,
+    -2px  2px     #fff,
+     2px -2px     #fff,
+    -2px -2px     #fff,
+     2px  2px 6px #555;
+     color: var(--secondary-color);
+     letter-spacing: .2rem;
+     text-align: left;
+}
+
+
+
+.main-button {
+  float: right;
+  padding-top: 3rem;
+}
+
+/* Footer */
+footer .footer-bottom {
+  background: var(--primary-color);
+  padding: 1rem;
+}
+
+footer .copyright{
+  font-size: .8rem;
+}
+
+footer a:hover {
+  color: var(--primary-color-hover);
+  font-weight: bold;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.light-header {
+  color: var(--secondary-color);
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.text-center {
+text-align: center;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.btn {
+  color: #fff;
+  display: inline-block;
+  font-family: 'Fredoka One', cursive;
+  font-size: .6rem;
+  letter-spacing: .09rem;
+  background: var(--primary-color);
+  border-radius: 10px;
+  line-height: normal;
+  transition: 0.4s;
+  padding: .5rem;
+  width: 80%
+}
+
+.btn:hover {
+  background: var(--primary-color-hover);
+  transition: 0.4s;
+}
+
+.btn-primary {
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+.btn-secondary {
+  background: var(--primary-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.height {
+  height:8000px;
+}
+
+.dark-color {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+
+
+
+/* Navigation */
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  position: fixed;
+  padding-top:10px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  position:absolute;
+  top:40%;
+  left: 210px;
+  font-family: Pacifico, cursive;
+  letter-spacing: .05rem;
+}
+nav li {
+  display: inline;
+  float: left;
+  transition: .3s;
+  width: 180px;
+}
+nav ul a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light-color);
+}
+nav li:hover {
+    transform: rotate(-10deg);
+    transition: .3s;
+}
+
+nav a#openup {
+  display: none;
+}
+
+.logo {
+  width: 192px;
+  padding-left: 1rem;
+  transition: .3s;
+}
+.logo:hover {
+  transform: rotate(-10deg);
+  transition: .3s;
+
+}
+
+.social {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  position: absolute;
+  top: 30px;
+  left: 80%;
+}
+
+.social-circle {
+    display: inline-block;
+    padding:.3rem;
+    background-color: var(--light-color);
+    height:25px;
+    width: 25px;
+    color: var(--primary-color);
+    border-radius: 100px;
+    transition: .3s;
+}
+
+.social-circle:hover {
+    background: var(--primary-color-hover);
+    color: var(--light-color);
+    transition: .3s;
+}
+
+.boxes {
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+
+.main-button {
+  width:60%;
+}
+
+.box-img {
+  width: 40%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .social {
+  position:static;
+  margin-top: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+    width:80%;
+}
+
+.top-section-right {
+width: 100%;
+margin-top: 1.5rem;
+margin-bottom: 3rem;
+  }
+
+.top-section-left {
+width: 100%;
+margin-bottom: .5rem;
+
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .how-to-use p {
+    width: 100%;
+  }
+
+  .logo:hover{
+        transform: none;
+  }
+
+  .main-button {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+
+.box{
+  min-width: 400px;
+}
+
+  #showcase h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+
+  header {
+    background: var(--primary-color);
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    background: var(--primary-color-hover);
+    padding-top: .8rem;
+    position: relative;
+    top:0;
+    left:0;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+    height:40px;
+    background: var(--primary-color-hover);
+
+  }
+  nav ul a {
+    text-align: center;
+    width: 100%;
+    background: var(--primary-color-hover);
+
+  }
+  nav li:hover {
+      transform: none;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: -60px;
+    font-size: 2rem;
+    color: var(--light-color);
+  }
+  nav a#openup {
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+    position: relative;
+  }
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+}
+
+
+
+
+@media screen and (max-width: 570px) {
+
+  #showcase h1{
+    font-size: 1.5rem;
+  }
+  .box{
+    min-width:80%;
+    text-align: center;
+  }
+  .box-img {
+    float: none;
+    margin: 0 auto;
+    width:80%;
+  }
+
+  .btn {
+    width:80%;
+  }
+
+  .box-content{
+    width:100%
+  }
+  .how-to-use p{
+    width:100%
+  }
+  .top-section-left {
+    text-align: center;
+  }
+}
