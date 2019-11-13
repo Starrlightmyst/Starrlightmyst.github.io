@@ -366,7 +366,7 @@ h3 {
 	flex: 1 0 24rem;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
 	overflow: hidden;
 }
 
@@ -378,8 +378,12 @@ h3 {
 	transition: transform 700ms ease-out;
 }
 
+.site {
+  margin-top: 20px;
+}
+
 .gallery-image:hover {
-	transform: scale(1.2);
+	transform: scale(1.03);
 }
 
 @supports (display: grid) {
