@@ -193,6 +193,7 @@ section.c p {
 #map1 {
   width: 100%;
   height: 400px;
+  margin-top: 20px;
 }
 
 section.d {
