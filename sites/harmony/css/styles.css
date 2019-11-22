@@ -3,6 +3,10 @@
   /* border: 1px red solid; */
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   text-align: center;
   background-color: #ffe4e1;
@@ -68,8 +72,8 @@ body {
 .rings {
   max-width: 50%;
   min-width: 410px;
-  position: absolute;
-  top: 410px;
+  position: relative;
+  top: 110px;
   left: -30px;
   display: block;
 }
@@ -164,6 +168,7 @@ section.c p {
   border-radius: 5px;
   margin-bottom: 30px;
   color: #fff;
+  width: 80%;
 }
 
 .custom-button:hover {
@@ -236,6 +241,14 @@ section.d textarea {
   width: 100%;
 }
 
+.attend {
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  padding: 10px;
+  background: #614B8A;
+  height: 45px;
+}
+
 section.e {
   /* background: #180739; */
   /* color: #eee; */
@@ -253,6 +266,9 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .showcase {
+    height: 100vh;
+  }
   .showcase .top-main {
     width: 100%;
   }
@@ -306,9 +322,7 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .showcase {
-    height: 90vh;
-  }
+ 
   .top-main {
     top: 80px;
   }

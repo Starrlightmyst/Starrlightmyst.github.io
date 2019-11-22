@@ -71,6 +71,7 @@
         <h2 class="date text-shadow">Sunday, March 15th, 2020 <span>12 noon</span></h2>
 
         <a href="#rsvp" class="custom-button rsvp">RSVP</a>
+        <a href="http://www.zola.com/registry/gregoryandlavita" class="custom-button">Visit Gift Registry</a>
     </div>
       <div class="u-cf"></div>
 
@@ -132,9 +133,9 @@
     <!-- change the form action to your script url -->
 
     <div class="form-elements">
-      <fieldset class="pure-group">
+      <fieldset class="pure-group attend">
         
-        <div class="will-attend u-pull-left"><input id="willAttend" type="radio" name="willAttend" value="yes" /> <label for="willAttend">Will Attend</label></div>
+        <div class="will-attend u-pull-left"><input id="willAttend" type="radio" name="willAttend" value="yes" required/> <label for="willAttend">Will Attend</label></div>
 
         <div class="will-not-attend u-pull-right"><input id="willNotAttend" type="radio" name="willAttend" value="no" /> <label for="willNotAttend">Will Not Attend</label></div>
         
@@ -173,7 +174,7 @@
         <textarea class="form-style" id="extra" name="extra" rows="10"
         placeholder="If not, you can leave this box blank"></textarea>
       </fieldset>
-
+      
       <fieldset class="pure-group honeypot-field">
         <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
         <input id="honeypot" type="text" name="honeypot" value="" />
@@ -181,12 +182,14 @@
 
       <button class="button-success custom-button custom-button2">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+        <small>If you are having problems with the RSVP form system, please contact us directly to RSVP.</small>
     </div>
 
     <!-- Customise the Thankyou Message People See when they submit the form: -->
     <div class="thankyou_message" style="display:none;">
       <h3><em>Thank you</em> for your RSVP!</h3>
       <p>If you need to make any changes, please fill out the RSVP form again. Thanks!</p>
+      <p>Be sure to also check out our<a href="http://www.zola.com/registry/gregoryandlavita"> gift registry</a>.</p>
     </div>
 
   </form>
