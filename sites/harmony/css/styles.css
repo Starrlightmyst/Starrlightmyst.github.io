@@ -73,7 +73,7 @@ body {
   max-width: 50%;
   min-width: 410px;
   position: relative;
-  top: 110px;
+  top: 20vh;
   left: -30px;
   display: block;
 }
@@ -162,7 +162,7 @@ section.c p {
   text-decoration: none;
   display: block;
   height: 45px;
-  background-color: #614B8A;
+  background-color: rgba(97, 75, 138, .7);
   margin: 0 auto;
   padding: 10px;
   border-radius: 5px;
@@ -338,8 +338,8 @@ footer {
     max-width: 100%;
     min-width: 70%;
     position: relative;
-    top: 60px;  
-    left: 3px;
+    /* top: 60px;  
+    left: 3px; */
   }
 
   .venue-link {
